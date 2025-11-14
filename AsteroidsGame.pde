@@ -21,7 +21,7 @@ public void keyPressed(){
    
  }
  if (key == 'w'){
-   bob.accelerate();
+   bob.accelerate(2);
  }
  if (key == 'a'){
    bob.turn(-5);
