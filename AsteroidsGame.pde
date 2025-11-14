@@ -19,7 +19,7 @@ public void draw()
 }
 public void keyPressed(){
  if (key == 'h') {
-   
+   bob.hyperspace();
  }
  if (key == 'w'){
    bob.accelerate(2);
