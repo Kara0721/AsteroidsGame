@@ -4,13 +4,13 @@
 public void setup() 
 {
   size (400,400);
-  background(256);
   for (int i = 0; i < pheonix.length; i++){
     pheonix[i] = new Star();
   }
 }
 public void draw() 
 {
+  background(256);
   for (int i = 0; i < pheonix.length; i++){
     pheonix[i].show();
   }
@@ -18,5 +18,18 @@ public void draw()
 }
 public void keyPressed(){
  if (key == 'h') {
+   
+ }
+ if (key == 'w'){
+   bob.move();
+ }
+ if (key == 'a'){
+   bob.turn(-5);
+ }
+ if (key == 'd'){
+   bob.turn(5);
+ }
+ if (key == 's'){
+   
  }
 }
