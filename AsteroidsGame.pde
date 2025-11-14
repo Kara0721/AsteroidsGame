@@ -10,7 +10,7 @@ public void setup()
 }
 public void draw() 
 {
-  background(256);
+  background(0);
   for (int i = 0; i < pheonix.length; i++){
     pheonix[i].show();
   }
