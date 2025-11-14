@@ -7,8 +7,8 @@ class Spaceship extends Floater
     myColor = 255;
     myCenterX = 200;
     myCenterY = 200;
-    myXspeed = 0;
-    myYspeed = 0;
+    myXspeed = 2;
+    myYspeed = 2;
     myPointDirection = 0;
    }//end of spaceship constructor
    public void hyperspace(){
