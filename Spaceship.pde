@@ -11,8 +11,10 @@ class Spaceship extends Floater
     myYspeed = 0;
     myPointDirection = 0;
    }//end of spaceship constructor
-
    public void hyperspace(){
-  
-}
+    myYspeed = myXspeed = 0;
+    myCenterX = (int)(Math.random()*401);
+    myCenterY = (int)(Math.random()*401);
+    myPointDirection = (int)(Math.random()*361);
+  }
 }
