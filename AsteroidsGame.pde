@@ -15,6 +15,7 @@ public void draw()
     pheonix[i].show();
   }
   bob.show();
+  bob.move();
 }
 public void keyPressed(){
  if (key == 'h') {
