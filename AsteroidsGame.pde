@@ -30,7 +30,4 @@ public void keyPressed(){
  if (key == 'd'){
    bob.turn(5);
  }
- if (key == 's'){
-   
- }
 }
