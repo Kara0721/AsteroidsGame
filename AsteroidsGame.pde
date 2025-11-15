@@ -23,11 +23,14 @@ public void keyPressed(){
  }
  if (key == 'w'){
    bob.accelerate(2);
+  myXspeed =+ 1;
  }
  if (key == 'a'){
    bob.turn(-5);
+  myYspeed =+1;
  }
  if (key == 'd'){
    bob.turn(5);
+myYspeed =+1;
  }
 }
