@@ -22,7 +22,7 @@ public void keyPressed(){
    bob.hyperspace();
  }
  if (key == 'w'){
-   bob.accelerate(1000);
+   bob.accelerate(2);
  }
  if (key == 'a'){
    bob.turn(-5);
