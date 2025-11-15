@@ -15,9 +15,9 @@ public void draw()
     pheonix[i].show();
   }
   bob.show();
+  bob.move();
 }
 public void keyPressed(){
-bob.move();
  if (key == 'h') {
    bob.hyperspace();
  }
