@@ -1,10 +1,14 @@
  Spaceship bob = new Spaceship();
   Star pheonix [] = new Star [300];
+  Asteroid hangman [] = new Asteroid [10];
 public void setup() 
 {
   size (400,400);
   for (int i = 0; i < pheonix.length; i++){
     pheonix[i] = new Star();
+  }
+  for (int k = 0; k < hangman.length; k++){
+   hangman[k] = new Asteroid(); 
   }
 }
 public void draw() 
@@ -12,6 +16,9 @@ public void draw()
   background(0);
   for (int i = 0; i < pheonix.length; i++){
     pheonix[i].show();
+  }
+  for (int k = 0; k < hangman.length; k++){
+   hangman[k].show(); 
   }
   bob.show();
   bob.move();
