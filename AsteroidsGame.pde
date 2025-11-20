@@ -19,6 +19,8 @@ public void draw()
   }
   for (int k = 0; k < hangman.length; k++){
    hangman[k].show(); 
+   hangman[k].move();
+   fill(0);
   }
   bob.show();
   bob.move();
