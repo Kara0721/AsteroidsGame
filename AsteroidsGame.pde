@@ -17,12 +17,11 @@ public void draw()
   for (int i = 0; i < pheonix.length; i++){
     pheonix[i].show();
   }
-  for (int k = 0; k < hangman.size(); k++){
+  for (int k = hangman.size()-1; k >=0; k--){
    hangman.get(k).show(); 
    hangman.get(k).move();
    if (dist(hangman.get(k).getAx(), hangman.get(k).getAy(), bob.getX(), bob.getY()) <10){
       hangman.remove(k);
-      k--;
      }
   }
   bob.show();
