@@ -20,7 +20,10 @@ public void draw()
   for (int k = 0; k < hangman.size(); k++){
    hangman.get(k).show(); 
    hangman.get(k).move();
-   if (
+   if (dist(hangman.get(k).getAx(), hangman.get(k).getAy(), bob.getX(), bob.getY()) <10){
+      hangman.remove(k);
+      k--;
+     }
   }
   bob.show();
   bob.move();
