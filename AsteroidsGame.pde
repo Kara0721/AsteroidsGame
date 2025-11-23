@@ -7,7 +7,7 @@ public void setup()
   for (int i = 0; i < pheonix.length; i++){
     pheonix[i] = new Star();
   }
-  for (int k = 0; k < hangman.size(); k++){
+  for (int k = 0; k < 10; k++){
    hangman.add(new Asteroid()); 
   }
 }
