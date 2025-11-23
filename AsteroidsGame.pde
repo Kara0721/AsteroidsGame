@@ -20,6 +20,7 @@ public void draw()
   for (int k = 0; k < hangman.size(); k++){
    hangman.get(k).show(); 
    hangman.get(k).move();
+   if (
   }
   bob.show();
   bob.move();
