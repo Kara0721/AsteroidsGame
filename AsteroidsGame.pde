@@ -1,5 +1,6 @@
  Spaceship bob = new Spaceship();
   Star pheonix [] = new Star [300];
+  ArrayList <Bullet> mav = new ArrayList <Bullet>();
   ArrayList <Asteroid> hangman = new ArrayList <Asteroid>();
 public void setup() 
 {
@@ -26,6 +27,10 @@ public void draw()
   }
   bob.show();
   bob.move();
+  for (int i = 0; i < mav.size(); i++){
+   mav.get(i).move();
+   mav.get(i).show();
+  }
 }
 public void keyPressed(){
  if (key == 'h') {
@@ -40,5 +45,8 @@ public void keyPressed(){
  }
  if (key == 'd'){
    bob.turn(5);
+ }
+ if (key == ' '){
+  mav.add(new Bullet(bob)); 
  }
 }
