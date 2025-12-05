@@ -30,16 +30,13 @@ public void draw()
   for (int i = 0; i < mav.size(); i++){
    mav.get(i).move();
    mav.get(i).show();
-   if (dist((float)hangman.get(i).getAx(),(float)hangman.get(i).getAy(),(float)mav.get(i).getX(),(float)mav.get(i).getY()) < 25){
-       hangman.remove(i);
-       mav.remove(i);
-     }
-   for (int k = 0; k < hangman.size(); k++){
-     if (dist((float)hangman.get(k).getAx(),(float)hangman.get(k).getAy(),(float)mav.get(i).getX(),(float)mav.get(i).getY()) < 25){
+    for (int k = 0; k < hangman.size(); k++){
+      if (dist((float)hangman.get(k).getAx(),(float)hangman.get(k).getAy(),(float)mav.get(i).getX(),(float)mav.get(i).getY()) < 15 ){
        hangman.remove(k);
-       mav.remove(k);
+       mav.remove(i);
+       break;
+        } 
      }
-   }
   }
 }
 public void keyPressed(){
